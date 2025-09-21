@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co.com/GfhPcSV5/tamim.jpg",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 398.6,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 8000000
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co.com/pjBPXnn8/Shaheen-Shah-Afridi.jpg",
+    "name": "Shaheen Shah Afridi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "rating": 216.7,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast",
+    "price": 12000000
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co.com/HfrMCfGP/skysports-dawid-malan-yorkshire-5405500.jpg",
+    "name": "Dawid Malan",
+    "country": "England",
+    "role": "Batsman",
+    "rating": 371.8,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 9500000
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co.com/fGr6cpMP/miraz.jpg",
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 687.3,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 10000000
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co.com/GfhPcSV5/tamim.jpg",
+    "name": "Kyle Mayers",
+    "country": "West Indies",
+    "role": "All-rounder",
+    "rating": 365.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 8500000
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co.com/fGr6cpMP/miraz.jpg",
+    "name": "Khushdil Shah",
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "rating": 412.5,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 7764000
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co.com/HfrMCfGP/skysports-dawid-malan-yorkshire-5405500.jpg",
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "rating": 389.2,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 6495000
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co.com/pjBPXnn8/Shaheen-Shah-Afridi.jpg",
+    "name": "Faheem Ashraf",
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "rating": 354.9,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 6141000
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co.com/fGr6cpMP/miraz.jpg",
+    "name": "Akif Javed",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "rating": 341.7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm medium-fast",
+    "price": 6068000
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co.com/HfrMCfGP/skysports-dawid-malan-yorkshire-5405500.jpg",
+    "name": "Mohammad Naim",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 328.4,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 5344000
+  },
+  {
+    "id": 11,
+    "img": "https://i.ibb.co.com/pjBPXnn8/Shaheen-Shah-Afridi.jpg",
+    "name": "Tanzid Hasan",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "rating": 312.9,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 5037000
+  },
+  {
+    "id": 12,
+    "img": "https://i.ibb.co.com/GfhPcSV5/tamim.jpg",
+    "name": "Ryan Burl",
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "rating": 297.6,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 4331000
+  }
+]
