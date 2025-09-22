@@ -1,15 +1,22 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
-const PlayersCard = ({ player, setAvailAbleBalance, availAbleBalance,playerSelected,setPlayerSelected }) => {
+const PlayersCard = ({
+  player,
+  setAvailAbleBalance,
+  availAbleBalance,
+  playerSelected,
+  setPlayerSelected,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
   const handleSelected = (playerData) => {
     if (availAbleBalance < playerData.price) {
-      alert("Not enough balance");
+      toast("Not enough balance");
       return;
     } else {
       setIsSelected(true),
         setAvailAbleBalance(availAbleBalance - playerData.price);
-        setPlayerSelected([...playerSelected,playerData])
+      setPlayerSelected([...playerSelected, playerData]);
     }
   };
   return (
