@@ -11,9 +11,13 @@ const PlayersCard = ({
   const [isSelected, setIsSelected] = useState(false);
   const handleSelected = (playerData) => {
     if (availAbleBalance < playerData.price) {
-      toast("Not enough balance");
+      alert("Not enough balance");
       return;
     } else {
+      if (playerSelected.length === 6) {
+        alert("You can't buy more than 6 players");
+        return;
+      }
       setIsSelected(true),
         setAvailAbleBalance(availAbleBalance - playerData.price);
       setPlayerSelected([...playerSelected, playerData]);
@@ -32,10 +36,10 @@ const PlayersCard = ({
         <h2 className="card-title ml-2">👤 {player.name}</h2>
         <div className=" flex justify-between items-center border-b-1 border-gray-200 pb-2">
           <div>
-            <span className="ml-2">🏴 {player.country}</span>
+            <span className="ml-2">{player.flag} {player.country}</span>
           </div>
           <div>
-            <button className="btn">All rounder</button>
+            <button className="btn">{player.role}</button>
           </div>
         </div>
 

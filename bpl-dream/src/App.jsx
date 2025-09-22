@@ -1,7 +1,9 @@
 import { Suspense, useState } from "react";
 import "./App.css";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import AvailablePlayers from "./Components/Available players/Available-Players";
 import NavBar from "./Components/Nav/NavBar";
 import Selectedplayers from "./Components/Selected Players/Selected-players";
@@ -10,7 +12,7 @@ const promisePlayers = fetch("/players.json").then((res) => res.json());
 // console.log(promisePlayers);
 
 function App() {
-  const [availAbleBalance, setAvailAbleBalance] = useState(60000000);
+  const [availAbleBalance, setAvailAbleBalance] = useState(600000000);
   const [playerSelected, setPlayerSelected] = useState([]);
   // console.log(playerSelected);
   const removePlayer = (p) => {
@@ -24,6 +26,7 @@ function App() {
   return (
     <>
       <NavBar availAbleBalance={availAbleBalance}></NavBar>
+
       <div className=" max-w-[1200px] mx-auto flex justify-between items-center ">
         <h1 className="font-bold text-2xl">
           {" "}
@@ -43,7 +46,7 @@ function App() {
           </button>
           <button
             onClick={() => setToggle(false)}
-            className={`btn py-3 px-4 border-gray-200 rounded-l-2xl border-r-0 ${
+            className={`btn py-3 px-4 border-gray-200 rounded-r-2xl border-r-0 ${
               toggle === false ? "bg-[#E7FE29]" : ""
             } `}
           >
@@ -74,7 +77,8 @@ function App() {
           ></Selectedplayers>
         </Suspense>
       )}
-      <ToastContainer />
+
+      {/* <ToastContainer /> */}
     </>
   );
 }
