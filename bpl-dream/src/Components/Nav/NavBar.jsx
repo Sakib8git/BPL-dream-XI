@@ -1,6 +1,6 @@
 import navImg from "../../assets/logo.png";
 
-const NavBar = () => {
+const NavBar = ({availAbleBalance}) => {
   return (
     <div>
       <div className="navbar max-w-[1200px] mx-auto">
@@ -10,7 +10,7 @@ const NavBar = () => {
           </a>
         </div>
         <div className="flex-none">
-          <span>600000000</span>
+          <span>{availAbleBalance}</span>
           <span> Coin 🪙</span>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 
 import AvailablePlayers from "./Components/Available players/Available-Players";
@@ -9,13 +9,55 @@ const promisePlayers = fetch("/players.json").then((res) => res.json());
 // console.log(promisePlayers);
 
 function App() {
+  const [availAbleBalance, setAvailAbleBalance] = useState(60000000);
+  const [playerSelected, setPlayerSelected] = useState([]);
+  // console.log(playerSelected);
+  const [toggle, setToggle] = useState(true);
   return (
     <>
-      <NavBar></NavBar>
-      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-        <AvailablePlayers promisePlayers={promisePlayers}></AvailablePlayers>
-      </Suspense>
-      {/* <Selectedplayers></Selectedplayers> */}
+      <NavBar availAbleBalance={availAbleBalance}></NavBar>
+      <div className=" max-w-[1200px] mx-auto flex justify-between items-center ">
+        <h1 className="font-bold text-2xl">AvailAble Players</h1>
+
+        <div className="font-bold">
+          <button
+            onClick={() => setToggle(true)}
+            className={`btn py-3 px-4 border-gray-200 rounded-l-2xl border-r-0 ${
+              toggle === true ? "bg-[#E7FE29]" : ""
+            } `}
+          >
+            Available
+          </button>
+          <button
+            onClick={() => setToggle(false)}
+            className={`btn py-3 px-4 border-gray-200 rounded-l-2xl border-r-0 ${
+              toggle === false ? "bg-[#E7FE29]" : ""
+            } `}
+          >
+            Selected <span>0</span>{" "}
+          </button>
+        </div>
+      </div>
+
+      {toggle === true ? (
+        <Suspense
+          fallback={<span className="loading loading-dots loading-xl"></span>}
+        >
+          <AvailablePlayers
+            playerSelected={playerSelected}
+            setPlayerSelected={setPlayerSelected}
+            setAvailAbleBalance={setAvailAbleBalance}
+            promisePlayers={promisePlayers}
+            availAbleBalance={availAbleBalance}
+          ></AvailablePlayers>
+        </Suspense>
+      ) : (
+        <Suspense
+          fallback={<span className="loading loading-dots loading-xl"></span>}
+        >
+          <Selectedplayers playerSelected={playerSelected}></Selectedplayers>
+        </Suspense>
+      )}
     </>
   );
 }
